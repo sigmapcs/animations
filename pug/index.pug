@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    link(href="https://file.myfontastic.com/dukkMftkPuyx2goc3yNZhR/icons.css" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Lato:400,700|Russo+One" rel="stylesheet")
+    link(rel="stylesheet", href="css/styles.css")
+    title Animate
+body
+    h1.main-title Animate
+    section.container.ani
+        .box.animate
+    section.container.banner
+        #slider.slider
+            .slider__wrapper
+                -for(var i = 1; i <= 3; i++)
+                    .slide
+                        img(src=`img/slider${i}.jpg`, alt="")

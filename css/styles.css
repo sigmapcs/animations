@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html,
+body {
+  margin: 0; }
+
+img {
+  display: block;
+  width: 100%; }
+
+h1 {
+  text-align: center;
+  font-family: "Russo One", sans-serif; }
+
+.container {
+  margin: 2em 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: 2em auto; }
+
+.ani {
+  position: relative;
+  border: solid 3px seagreen;
+  height: 300px; }
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 75px;
+  background: mediumvioletred; }
+
+.animate {
+  -webkit-animation: move 1.5s linear infinite;
+  animation: move 1.5s linear infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate; }
+
+@-webkit-keyframes move {
+  to {
+    left: calc(100% - 75px);
+    top: calc(100% - 75px); } }
+
+@keyframes move {
+  to {
+    left: calc(100% - 75px);
+    top: calc(100% - 75px); } }
+
+.slider {
+  width: 100%; }
+  .slider__wrapper {
+    position: relative;
+    margin-left: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 300%;
+    -webkit-animation: slideNext 1.5s linear alternate;
+    animation: slideNext 1.5s linear alternate; }
+
+@-webkit-keyframes slideNext {
+  to {
+    left: -33.33%; } }
+
+@keyframes slideNext {
+  to {
+    left: -33.33%; } }
+
+/*# sourceMappingURL=styles.css.map */
